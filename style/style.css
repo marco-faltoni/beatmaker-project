@@ -11,6 +11,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(120deg, #e9c691, #ce4137);
 }
 
 i, svg {
@@ -80,6 +81,10 @@ i, svg {
   font-size: 1rem;
 }
 
+.sequencer .kick-track .controls .mute.active, .sequencer .snare-track .controls .mute.active, .sequencer .hihat-track .controls .mute.active {
+  background: #bdb8b8;
+}
+
 .sequencer .kick-track .kick, .sequencer .kick-track .snare, .sequencer .kick-track .hihat, .sequencer .snare-track .kick, .sequencer .snare-track .snare, .sequencer .snare-track .hihat, .sequencer .hihat-track .kick, .sequencer .hihat-track .snare, .sequencer .hihat-track .hihat {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,9 +97,10 @@ i, svg {
 }
 
 .sequencer .kick-track .kick .kick-pad, .sequencer .kick-track .kick .snare-pad, .sequencer .kick-track .kick .hihat-pad, .sequencer .kick-track .snare .kick-pad, .sequencer .kick-track .snare .snare-pad, .sequencer .kick-track .snare .hihat-pad, .sequencer .kick-track .hihat .kick-pad, .sequencer .kick-track .hihat .snare-pad, .sequencer .kick-track .hihat .hihat-pad, .sequencer .snare-track .kick .kick-pad, .sequencer .snare-track .kick .snare-pad, .sequencer .snare-track .kick .hihat-pad, .sequencer .snare-track .snare .kick-pad, .sequencer .snare-track .snare .snare-pad, .sequencer .snare-track .snare .hihat-pad, .sequencer .snare-track .hihat .kick-pad, .sequencer .snare-track .hihat .snare-pad, .sequencer .snare-track .hihat .hihat-pad, .sequencer .hihat-track .kick .kick-pad, .sequencer .hihat-track .kick .snare-pad, .sequencer .hihat-track .kick .hihat-pad, .sequencer .hihat-track .snare .kick-pad, .sequencer .hihat-track .snare .snare-pad, .sequencer .hihat-track .snare .hihat-pad, .sequencer .hihat-track .hihat .kick-pad, .sequencer .hihat-track .hihat .snare-pad, .sequencer .hihat-track .hihat .hihat-pad {
-  width: 5rem;
-  height: 5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   margin: 1rem 0.5rem;
+  border-radius: 50%;
   cursor: pointer;
 }
 
@@ -103,7 +109,7 @@ i, svg {
 }
 
 .sequencer .kick-track .kick .kick-pad.active, .sequencer .kick-track .snare .kick-pad.active, .sequencer .kick-track .hihat .kick-pad.active, .sequencer .snare-track .kick .kick-pad.active, .sequencer .snare-track .snare .kick-pad.active, .sequencer .snare-track .hihat .kick-pad.active, .sequencer .hihat-track .kick .kick-pad.active, .sequencer .hihat-track .snare .kick-pad.active, .sequencer .hihat-track .hihat .kick-pad.active {
-  background: #4747a7;
+  background: #42429e;
 }
 
 .sequencer .kick-track .kick .snare-pad, .sequencer .kick-track .snare .snare-pad, .sequencer .kick-track .hihat .snare-pad, .sequencer .snare-track .kick .snare-pad, .sequencer .snare-track .snare .snare-pad, .sequencer .snare-track .hihat .snare-pad, .sequencer .hihat-track .kick .snare-pad, .sequencer .hihat-track .snare .snare-pad, .sequencer .hihat-track .hihat .snare-pad {
@@ -119,7 +125,7 @@ i, svg {
 }
 
 .sequencer .kick-track .kick .hihat-pad.active, .sequencer .kick-track .snare .hihat-pad.active, .sequencer .kick-track .hihat .hihat-pad.active, .sequencer .snare-track .kick .hihat-pad.active, .sequencer .snare-track .snare .hihat-pad.active, .sequencer .snare-track .hihat .hihat-pad.active, .sequencer .hihat-track .kick .hihat-pad.active, .sequencer .hihat-track .snare .hihat-pad.active, .sequencer .hihat-track .hihat .hihat-pad.active {
-  background: #3a966f;
+  background: #338161;
 }
 
 .sequencer .play {
@@ -130,6 +136,28 @@ i, svg {
   border: none;
   cursor: pointer;
   margin-top: 3rem;
+}
+
+.sequencer .tempo {
+  margin: 3rem;
+  width: 30%;
+}
+
+.sequencer .tempo .tempo-slider {
+  padding: 0.1rem;
+  -webkit-appearance: none;
+  margin: 1rem 0rem;
+  width: 100%;
+  position: relative;
+  background: #525050;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.sequencer .tempo p {
+  font-size: 1.5rem;
+  margin: 1rem;
+  text-align: center;
 }
 
 @-webkit-keyframes playTrack {
