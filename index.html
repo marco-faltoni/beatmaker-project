@@ -4,23 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ccab3f3465.js" crossorigin="anonymous"></script>
     <title>Beatmaker Project</title>
 </head>
 <body>
+    <header>
+        <h1>A very Cool <br>Online Beatmaker</h1>
+        <h2>All you have to do is to tap on the round circles below. You can select multiple circles on the same line to create complex musical compositions; also, by choosing one of the selected options and the tempo's speed, you can instantly modify the music you are creating. </h2>
+        <h3>Check my Code on Github ->
+            <a href="https://github.com/marco-faltoni/beatmaker-project" target="_blank" rel="noreferrer">
+                <i class="fab fa-github-square"></i>
+            </a>
+        </h3>
+    </header>
     <div class="sequencer">
         <div class="kick-track">
             <div class="controls">
-                <h1>Kick</h1>
-                <button data-track="0" class="mute kick-volume">
-                    <i class="fas fa-volume-mute"></i>
-                </button>
-                <select name="kick-select" id="kick-select">
-                    <option value="./allSounds/kick-classic.wav">Classic Kick</option>
-                    <option value="./allSounds/kick-808.wav">808 Kick</option>
-                    <option value="./allSounds/kick-heavy.wav">Kick Heavy</option>
-                    <option value="./allSounds/kick-softy.wav">Kick Softy</option>
-                </select>
+                <div class="text">
+                    <h1>Kick</h1>
+                </div>
+                <div class="ct">
+                    <button data-track="0" class="mute kick-volume">
+                        <i class="fas fa-volume-mute"></i>
+                    </button>
+                    <select name="kick-select" id="kick-select">
+                        <option value="./allSounds/kick-classic.wav">Classic Kick</option>
+                        <option value="./allSounds/kick-808.wav">808 Kick</option>
+                        <option value="./allSounds/kick-heavy.wav">Kick Heavy</option>
+                        <option value="./allSounds/kick-softy.wav">Kick Softy</option>
+                    </select>
+                </div>
+                
             </div>
             <div class="kick">
                 <div class="pad kick-pad b0"></div>
@@ -36,15 +51,20 @@
 
         <div class="snare-track">
             <div class="controls">
-                <h1>Snare</h1>
-                <button data-track="1" class="mute snare-volume">
-                    <i class="fas fa-volume-mute"></i>
-                </button>
-                <select name="snare-select" id="snare-select">
-                    <option value="./allSounds/snare-acoustic01.wav">Classic Snare</option>
-                    <option value="./allSounds/snare-808.wav">808 Snare</option>
-                    <option value="./allSounds/snare-vinyl02.wav">Snare Vinyl</option>
-                </select>
+                <div class="text">
+                    <h1>Snare</h1>
+                </div>
+                <div class="ct">
+                    <button data-track="1" class="mute snare-volume">
+                        <i class="fas fa-volume-mute"></i>
+                    </button>
+                    <select name="snare-select" id="snare-select">
+                        <option value="./allSounds/snare-acoustic01.wav">Classic Snare</option>
+                        <option value="./allSounds/snare-808.wav">808 Snare</option>
+                        <option value="./allSounds/snare-vinyl02.wav">Snare Vinyl</option>
+                    </select>
+                </div>
+                
             </div>
             <div class="snare">
                 <div class="pad snare-pad b0"></div>
@@ -60,14 +80,19 @@
 
         <div class="hihat-track">
             <div class="controls">
-                <h1>HiHat</h1>
-                <button data-track="2" class="mute hihat-volume">
-                    <i class="fas fa-volume-mute"></i>
-                </button>
-                <select name="hihat-select" id="hihat-select">
-                    <option value="./allSounds/hihat-acoustic01.wav">Hihat Acoustic</option>
-                    <option value="./allSounds/hihat-808.wav">808 Hihat</option>
-                </select>
+                <div class="text">
+                    <h1>Hihat</h1>
+                </div>
+                <div class="ct">
+                    <button data-track="2" class="mute hihat-volume">
+                        <i class="fas fa-volume-mute"></i>
+                    </button>
+                    <select name="hihat-select" id="hihat-select">
+                        <option value="./allSounds/hihat-acoustic01.wav">Hihat Acoustic</option>
+                        <option value="./allSounds/hihat-808.wav">808 Hihat</option>
+                    </select>
+                </div>
+                
             </div>
             <div class="hihat">
                 <div class="pad hihat-pad b0"></div>

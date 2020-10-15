@@ -9,8 +9,42 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Alegreya', serif;
     background-image: linear-gradient(120deg,#e9c691, #ce4137 );
+    min-height: 100vh;
+    color: #fffaf0f5;;
+}
+
+header {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    h1 {
+        text-align: center;
+        display: block;
+        text-transform: uppercase;
+        padding-top: 5rem;
+        margin-bottom: 3rem;
+    }
+    h2 {
+        max-width: 50%;
+        text-align: center;
+        font-style: italic;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    h3 {
+        font-size: 1rem;
+        font-style: italic;
+        .fa-github-square {
+            font-size: 2rem;
+            color: white;
+            vertical-align: middle;
+        }
+    }
 }
 
 i, svg {
@@ -19,7 +53,6 @@ i, svg {
 
 .sequencer {
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -27,19 +60,23 @@ i, svg {
     .kick-track, .snare-track, .hihat-track {
         display: flex;
         align-items: center;
-        width: 70%;
         justify-content: space-between;
-        margin-top: 5rem;
+        margin-top: 1rem;
         .controls {
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            flex: 1;
+            // flex: 1;
             margin: 0 2rem;
+            .ct {
+                margin-bottom: 3rem;
+            }
             button {
                 padding: 1rem;
                 border: none;
-                background: rgb(82, 80, 80);
+                border-radius: 10px;
+                background-image: linear-gradient(120deg,#e67171, #cb1c67);
                 color: white;
                 font-size: 1rem;
                 cursor: pointer;
@@ -48,9 +85,12 @@ i, svg {
             select {
                 padding: 1rem;
                 font-size: 1rem;
+                border: none;
+                margin: 0;
+                border-radius: 10px;
             }
             .mute.active{
-                background: rgb(189, 184, 184);
+                background-image: linear-gradient(120deg,#c75e5e, #8f1248);
             }
         }
 
@@ -92,9 +132,10 @@ i, svg {
     .play {
         padding: 1rem 2rem;
         font-size: 1.5rem;
-        background: rgb(82, 80, 80);
+        background-image: linear-gradient(120deg,#e67171, #cb1c67);
         color: white;
         border: none;
+        border-radius: 15px;
         cursor: pointer;
         margin-top: 3rem;
     }
@@ -108,7 +149,7 @@ i, svg {
             margin: 1rem 0rem;
             width: 100%;
             position: relative;
-            background:  rgb(82, 80, 80);
+            background-image: linear-gradient(120deg,#e67171, #cb1c67);
             cursor: pointer;
             border-radius: 1rem;
         }
