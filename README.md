@@ -1,4 +1,4 @@
-<h4 align="center">To-Do List App</h4>
+<h4 align="center">Online Beatmaker</h4>
 
 <p align="center"><img  width="70%" src="https://github.com/marco-faltoni/beatmaker-project/blob/main/screen.jpg"></p>
 
